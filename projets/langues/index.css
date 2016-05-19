@@ -1,0 +1,66 @@
+body{ 
+background: black;
+
+}
+
+
+h2{
+	color:yellow;
+}
+
+.iframe{ 
+border-style:ridge;
+border-radius: 15px;
+border-color:red;
+border-width: 4px;
+	-webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+   /* animation-duration: 2s; */
+	animation-iteration-count: infinite;
+
+}
+
+a{
+    color: rgb(0,76,0);
+	font-size: 18px;
+	
+}
+
+.accueil{
+    position: fixed;
+    background: rgb(214,214,214);
+    right: -10px;
+    top: -10px;
+    padding: 20px;
+    box-shadow: 0 0 10px white inset;
+    border-radius: 10px;
+}
+
+/*.accueil:hover{
+	
+   	z-index:-1; 
+	box-shadow: 0 0 10px white inset;
+    border-radius: 10px;
+	opacity:0.4;
+	
+}
+
+	/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+	animation-direction: reverse;
+	transition: 4s;
+    from {border-color: red;}
+    to {border-color: yellow;}
+	from {border-color: yellow;}
+    to {border-color: red;}
+}
+
+/* Standard syntax */
+@keyframes example {
+	
+	transition: 4s;
+      from {border-color: red;}
+    to {border-color: yellow;}
+	from {border-color: yellow;}
+    to {border-color: red;}
+}

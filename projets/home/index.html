@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TP01_Edivalter</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+
+</head>
+<body>
+<main class="debut">
+
+
+<label id="label" class="muet" style="color:orange;cursor: pointer;">
+	<input onclick="audioSet()" name="sourd" id="sourd" type="checkbox" checked />Sourdine</label>
+
+
+
+ <div class="nom"><h1>Edivalter dos Santos</h1></div>
+
+<div class="divimg">
+  <a target="_blank" href="">
+    <img src="vava.bmp" class="img" alt="Northern Lights">
+  </a>
+  <div class="desc">C'est moi</div>
+</div>
+
+
+<h3 class="h32">Bienvenue sur mon site web</h3>
+
+<p class="p2">Je vous invite `a le visiter. Les rubriques disponibles, en ordre alphabetique, son les suivantes</p>
+
+ <audio autoplay>
+            <source src="voix.mp3" type="audio/mpeg">            
+        </audio>
+
+
+<ul id="li2">
+        </ul>
+
+</main>
+
+<span style="color:#fff;"></span>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+    <script id="templateScript" type="text/x-handlebars-template">
+    {{#each projets}} 
+        <li>
+            <a href="{{dir}}" >{{{nom}}} </a> 
+            {{#if this.description}}
+                <div> {{description}} 
+                    {{#if this.sujets}}
+                        <p style="color:red;">Sujets:
+                            {{#each sujets}}
+                            <span>{{this}}</span>
+                            {{/each}}
+                        </p>
+                    {{/if}}             
+                </div>
+            {{/if}}
+        </li> 
+    {{/each}}
+</script> 
+ 
+  
+
+<script src="menu.js"></script>
+  
+
+
+
+
+</body>
+</html>
